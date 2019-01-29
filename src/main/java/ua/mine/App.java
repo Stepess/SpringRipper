@@ -9,6 +9,6 @@ public class App {
         ClassPathXmlApplicationContext context =
                 new ClassPathXmlApplicationContext("context.xml");
 
-            context.getBean(Quoter.class);
+            context.getBean(Quoter.class).sayQuote();
     }
 }
